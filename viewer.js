@@ -1,10 +1,14 @@
+var picNo = 1;
+
 function revBtnClick() {
-    document.getElementById('no').innerHTML = 'No.1';
-    document.getElementById('pict').src = 'img/1.jpg';
-    document.getElementById('no').className = 'no1';
+    picNo--;
+    document.getElementById('no').innerHTML = 'No.' + picNo;
+    document.getElementById('pict').src = 'img/' + picNo + '.jpg';
+    document.getElementById('no').className = 'no' + picNo;
 }
 function fwdBtnClick() {
-    document.getElementById('no').innerHTML = 'No.2';
-    document.getElementById('pict').src = 'img/2.jpg';
-    document.getElementById('no').className = 'no2';
+    picNo++;
+    document.getElementById('no').innerHTML = 'No.' + picNo;
+    document.getElementById('pict').src = 'img/' + picNo + '.jpg';
+    document.getElementById('no').className = 'no' + picNo;
 }
